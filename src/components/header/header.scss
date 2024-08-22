@@ -1,0 +1,30 @@
+.header{
+    
+    display: flex;
+    justify-content: end;
+    min-height: 22px;
+    align-items: center;
+    gap: 1em;
+    margin: 15px 50px 0 0;
+    color: white;
+    transition: all 0.2s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+
+    @media (max-width: 750px) {
+        margin: 15px 15px 0 0;
+        font-size: 13px;
+        position: static;
+    }
+
+    &-section{
+
+        &:hover{
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+    }
+}
